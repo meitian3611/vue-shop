@@ -85,7 +85,7 @@ export default {
           type: 'success',
           center: true
         })
-        console.log(res)
+        // console.log(res)
         window.sessionStorage.setItem('token', res.data.token)
         this.$router.push('/home')
       })
