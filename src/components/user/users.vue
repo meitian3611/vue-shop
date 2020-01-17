@@ -34,12 +34,12 @@
 
       <!-- 用户列表区域 -->
       <el-table :data="userList" border stripe>
-        <el-table-column label="编号" type="index"></el-table-column>
-        <el-table-column label="姓名" prop="username"></el-table-column>
-        <el-table-column label="邮箱" prop="email"></el-table-column>
-        <el-table-column label="电话" prop="mobile"></el-table-column>
-        <el-table-column label="角色" prop="role_name"></el-table-column>
-        <el-table-column label="状态" prop="">
+        <el-table-column align='center' width="70px" label="编号" type="index"></el-table-column>
+        <el-table-column header-align='center' label="姓名" prop="username"></el-table-column>
+        <el-table-column header-align='center' label="邮箱" prop="email"></el-table-column>
+        <el-table-column header-align='center' label="电话" prop="mobile"></el-table-column>
+        <el-table-column header-align='center' label="角色" prop="role_name"></el-table-column>
+        <el-table-column align='center' label="状态" prop="">
           <template slot-scope="scope">
             <el-switch
               v-model="scope.row.mg_state"
